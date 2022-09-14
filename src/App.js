@@ -1,12 +1,14 @@
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import './index';
 import { Routes, Route } from "react-router-dom";
 import Home from './Views/Home';
-import Room from './Views/Room';
+import Rooms from './Views/Rooms';
 import SignUp from './Views/SignUp';
-import Gallery from './Views/Gallery';
+import Services from './Views/Services';
+import About from './Views/About';
 
-function App() {
+export default function App() {
     return ( <
         Routes >
         <
@@ -14,15 +16,19 @@ function App() {
         element = { < Home / > }
         />  <
         Route path = "room"
-        element = { < Room / > }
+        element = { < Rooms / > }
         />  <
         Route path = "signup"
         element = { < SignUp / > }
         />  <
-        Route path = "gallery"
-        element = { < Gallery / > }
-        />   < /
-        Routes > );
-}
+        Route path = "services"
+        element = { < Services / > }
+        />   <
+        Route path = "about"
+        element = { < About / > }
+        />   <
+        /
+        Routes >
 
-export default App;
+    );
+}

@@ -1,5 +1,4 @@
 p,
-h4,
 h3,
 h6 {
     width: auto !important;
@@ -7,9 +6,21 @@ h6 {
     font-size: small !important;
 }
 
-p.push-left,
-div.push-left {
+h1 {
+    text-align: center !important;
+}
+
+.w-auto {
+    width: 5.5% !important;
+}
+
+.x-large {
+    font-size: x-large !important;
+}
+
+.push-left {
     text-align: start !important;
+    align-self: flex-start !important;
 }
 
 div.push-right {
@@ -26,7 +37,7 @@ img.syke {
 }
 
 .bar-below-nav {
-    align-items: center !important;
+    justify-content: center !important;
 }
 
 div {
@@ -41,8 +52,12 @@ a {
 .form-select,
 .form-control {
     background-color: transparent !important;
-    border-color: black !important;
+    border: 0;
     border-radius: 0%;
+}
+
+.back {
+    box-shadow: 1px 1px darkgoldenrod !important;
 }
 
 .front {
@@ -51,7 +66,8 @@ a {
 }
 
 .darker {
-    background-color: rgba(0, 0, 0, 0.572);
+    background-color: rgba(0, 0, 0, 0.793);
+    color: rgb(158, 158, 158) !important;
 }
 
 .carousel-caption {
@@ -65,6 +81,15 @@ a {
 
 .footer {
     justify-content: left !important;
+}
+
+.bars {
+    background-image: url("../assets/room.png");
+    background-size: 18%;
+    background-repeat: no-repeat;
+    background-position-y: bottom !important;
+    background-position-x: center !important;
+    color: transparent !important;
 }
 
 .bar {
@@ -91,6 +116,21 @@ a {
     color: transparent !important;
 }
 
+.menu {
+    background-image: url("https://cdnimg.webstaurantstore.com/images/blogs/3576/bed-breakfast_header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-tabs .nav-link {
+    color: rgb(30, 30, 30) !important;
+}
+
+.nav-tabs .nav-link.active {
+    color: rgb(219, 143, 0) !important;
+    font-weight: bold;
+}
+
 div.dropdown-menu.show {
     background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity))!important;
     margin-top: 8px;
@@ -106,7 +146,8 @@ button {
 }
 
 .link {
-    color: rgba(240, 248, 255, 0.621) !important;
+    color: rgb(179, 179, 179) !important;
+    bottom: auto !important;
 }
 
 .rooms {
@@ -114,12 +155,18 @@ button {
 }
 
 .orange-syke {
-    color: rgb(250, 166, 0) !important;
+    color: rgb(214, 153, 9) !important;
+    font-weight: bold !important;
 }
 
 .bg-warning {
-    background-color: rgb(250, 166, 0) !important;
-    color: rgb(23, 23, 23) !important;
+    background-color: rgb(255, 255, 255) !important;
+    color: rgb(26, 26, 26) !important;
+}
+
+.bg-warn {
+    background-color: rgb(255, 181, 45) !important;
+    color: rgb(25, 25, 25) !important;
 }
 
 svg {
@@ -128,6 +175,10 @@ svg {
 
 .bg-dark {
     color: rgba(240, 248, 255, 0.838) !important;
+}
+
+.bg-light {
+    color: rgba(28, 28, 28, 0.838) !important;
 }
 
 .rooms {

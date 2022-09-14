@@ -2,11 +2,11 @@ import './style.css';
 
 function Footer() {
     return ( <
-        div className = "row p-5 bg-light footer bg-dark" >
+        div className = "row p-5 bg-warning footer" >
         <
         div className = "col-lg-4 col-sm-6" >
         <
-        p > OPEN HOURS < /p>  <
+        p className = 'orange-syke' > OPEN HOURS < /p>  <
         div className = "row" >
         <
         div className = "col" >
@@ -35,7 +35,7 @@ function Footer() {
         <
         div className = "col-lg-4 col-sm-6 p-5" >
         <
-        p > CONTACTS < /p> <
+        p className = 'orange-syke' > CONTACTS < /p> <
         p > < b > Administration < /b></p >
         <
         p > +256(777) 904785 < /p> <
@@ -48,7 +48,7 @@ function Footer() {
         <
         div className = "col p-5" >
         <
-        p > LOCATION < /p> < /
+        p className = 'orange-syke' > LOCATION < /p> < /
         div >
         <
         /div>

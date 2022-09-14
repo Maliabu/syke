@@ -1,77 +1,17 @@
-import Navbars from './Navbar';
 import './style.css';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import First from '../assets/rooms/room-1/room.jpg';
-import Second from '../assets/rooms/room-1/room-7.jpg';
 import Third from '../assets/rooms/room-1/room-1.jpg';
-import Four from '../assets/rooms/room-1/room-4.jpg';
-import Double from './Double';
-import Deluxe from './Deluxe';
+import Second from '../assets/rooms/room-1/room-3.jpg';
+import Forth from '../assets/rooms/room-1/room-7.jpg';
 
 function Room() {
     return ( <
         div >
         <
-        Navbars / >
+        div className = 'bg-warning py-5 push-left' >
         <
-        div className = 'nav-below-syke row pt-5' >
-        <
-        h1 className = 'display-4 mb-3' > Rooms < /h1>  <
-        div className = 'row py-2 px-5' >
-        <
-        p className = 'px-5' > SINGLE < /p><p className='px-2'>DOUBLE</p > < p className = 'px-5' > DELUXE < /p>< p className='bg-warning px-5 py-2'><NavDropdown title="CHECK AVAILABILITY"> CHECK AVAILABILITY  < /NavDropdown > < /p ><
-        p className = 'border px-5 py-2' > <
-        svg xmlns = "http://www.w3.org/2000/svg"
-        width = "16"
-        height = "16"
-        fill = "currentColor"
-        class = "bi bi-pencil-square"
-        viewBox = "0 0 16 16" >
-        <
-        path d = "M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" / >
-        <
-        path d = "M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" / >
-        <
-        /svg>  BOOK A ROOM < /p > < /
-        div > < /
-        div >
-        <
-        div className = 'bg-dark p-5 push-left' >
-        <
-        h1 className = 'push-left' > SINGLE < /h1>  <
-        div className = 'row mt-5' >
-        <
-        div className = 'col-lg-5' > < img src = { First }
-        className = "room-images"
-        alt = "First-room" /
-        >
-        < /
-        div > <
-        div className = 'col-lg-7' > < img src = { Third }
-        className = "room-images"
-        alt = "First-room" /
-        >
-        < /
-        div > < /
-        div >
-        <
-        div className = 'row mt-5' >
-        <
-        div className = 'col-lg-6' > < img src = { Second }
-        className = "room-images"
-        alt = "First-room" /
-        >
-        < /
-        div > <
-        div className = 'col-lg-6' > < img src = { Four }
-        className = "room-images"
-        alt = "First-room" /
-        >
-        < /
-        div > < /
-        div >
-        <
-        div className = 'row pt-lg-3 mt-5 push-left' >
+        h2 className = 'push-left mt-5' > SINGLE < /h2>  <
+        div className = 'row push-left' >
         <
         div className = 'col-lg-4' > < p className = 'push-left' > < u > DETAILS < /u>  < /
         p >
@@ -121,16 +61,17 @@ function Room() {
         path d = "M13.229 8.271a.482.482 0 0 0-.063-.745A9.455 9.455 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.576 1.336c.206.132.48.108.653-.065zm-2.183 2.183c.226-.226.185-.605-.1-.75A6.473 6.473 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.407.19.611.09A5.478 5.478 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.61-.091l.016-.015zM9.06 12.44c.196-.196.198-.52-.04-.66A1.99 1.99 0 0 0 8 11.5a1.99 1.99 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .707 0l.707-.707z" / >
         <
         /svg> < /
-        p > < /
-        div > <
-        div className = 'col-lg-6 push-right' > < h6 > UG(SHS) / Night < /h6 > < h3 className = 'border px-5 py-2' > 80, 000 < /
-        h3 >
+        p >
         <
-        div className = 'row' >
+        /div> <
+        div className = 'col-lg-6' >
         <
-        div className = 'col-6' >
+        h6 > UG(SHS) / Night < /h6 > < h1 className = 'orange-syke px-5 py-2' > 80, 000 < /
+        h1 >
         <
-        p className = 'border px-lg-5 py-2' > <
+        div className = 'row' > < div className = 'col-6' >
+        <
+        p className = 'shadow border-0 bg-warning px-lg-5 py-2' > <
         svg xmlns = "http://www.w3.org/2000/svg"
         width = "16"
         height = "16"
@@ -142,20 +83,52 @@ function Room() {
         <
         path d = "M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" / >
         <
-        /svg>  BOOK THIS ROOM < /p > < /div> <
-        div className = 'col-6' >
-        <
-        p className = 'bg-warning px-lg-5 py-2' > ADD A PAYMENT PLAN < /p > < /div > <
-        /div> < /
-        div > < /
-        div >
-        <
-        Double / >
-        <
-        Deluxe / >
+        /svg>  BOOK THIS ROOM < /p > < /div><div className='col-6'> <
+        p className = 'shadow bg-warning px-lg-5 py-2' > ADD A PAYMENT PLAN < /p > < /
+        div > < /div></div >
         <
         /
         div >
+        <
+        div className = 'row p-5 bg-dark' >
+        <
+        div className = 'col-lg-5' > < img src = { First }
+        className = "room-images"
+        alt = "First-room" /
+        >
+        <
+        /
+        div > <
+        div className = 'col-lg-7' > < img src = { Third }
+        className = "room-images"
+        alt = "First-room" /
+        >
+        <
+        /
+        div > < /
+        div >
+        <
+        div className = 'row p-5 bg-light shadow' >
+        <
+        div className = 'col-lg-5' > < img src = { Second }
+        className = "room-images"
+        alt = "First-room" /
+        >
+        <
+        /
+        div > <
+        div className = 'col-lg-7' > < img src = { Forth }
+        className = "room-images"
+        alt = "First-room" /
+        >
+        <
+        /
+        div > < /
+        div >
+        <
+        /
+        div >
+
         <
         /div>
     );

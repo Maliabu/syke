@@ -1,7 +1,5 @@
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import { Navigate, Link } from 'react-router-dom';
 import './style.css';
 import '../App';
 import Logo from '../assets/logos.PNG';
@@ -9,10 +7,10 @@ import Logo from '../assets/logos.PNG';
 function Navbars() {
     return ( < Navbar collapseOnSelect expand = "lg"
         bg = "dark"
-        className = " px-5 navbar"
+        className = " px-5 navbar shadow"
         variant = "dark" >
         <
-        Navbar.Brand href = "#home"
+        Navbar.Brand href = "/"
         className = '' >
         <
         img src = { Logo }
@@ -27,43 +25,15 @@ function Navbars() {
         <
         Nav className = "right" >
         <
-        Nav.Link > < Navigate to = "/" > Home < /Navigate> < /Nav.Link > <
-        Nav.Link Navigate to = "/" > Services < /Nav.Link > <
-        Nav.Link Navigate to = "/" > Gallery < /
-        Nav.Link >
-        <
-        NavDropdown title = "Rooms"
-        id = "collapsible-nav-dropdown" >
-        <
-        NavDropdown.Item className = 'bg-dark' > <
-        Link to = "room"
-        className = 'link' > Single < /Link> < /NavDropdown.Item > <
-        NavDropdown.Item className = 'bg-dark' > <
-        Link to = "room"
-        className = 'link' > Double < /Link> < /NavDropdown.Item > <
-        NavDropdown.Item className = 'bg-dark' > <
-        Link to = "room"
-        className = 'link' > Deluxe < /Link> < /NavDropdown.Item >
-        <
-        NavDropdown.Item href = "#action/3.4"
-        className = 'bg-warning p-2 mt-2' > Check Availability < /NavDropdown.Item> < /
-        NavDropdown >
-        <
-        Nav.Link href = "#services"
-        className = 'p-lg-3 bar' > Bar & Restaurant < /Nav.Link > < /
-        Nav > < /
-        Navbar.Collapse > <
-        Nav >
-        <
-        Nav.Link eventKey = { 2 }
-        href = "#memes"
-        className = 'px-3 border' >
-        LOGIN | SIGN UP <
-        /Nav.Link> < /
-        Nav >
-        <
-        /
-        Navbar >
+        Nav.Link href = "room"
+        className = 'link' > Rooms < /Nav.Link >  <
+        Nav.Link href = "services"
+        className = 'p-lg-3 bar' > Bar & Restaurant < /Nav.Link >  <
+        Nav.Link className = 'link'
+        href = "about" > About < /Nav.Link> <
+        Nav.Link href = "signup"
+        className = 'text-warning' > < u >
+        LOGIN | SIGN UP < /u> < /Nav.Link > < /Nav > </Navbar.Collapse > < /Navbar >
     );
 }
 

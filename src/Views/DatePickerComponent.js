@@ -4,12 +4,13 @@ import './style.css';
 
 class BootstrapDatePickerComponent extends React.Component {
 
+
     render() {
 
         return ( <
             div >
             <
-            div className = "row border-dark" >
+            div className = "row shadow" >
 
             <
             Form.Group className = 'form'

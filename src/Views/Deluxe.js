@@ -1,57 +1,17 @@
 import './style.css';
 import First from '../assets/rooms/room-2/room.jpg';
 import Second from '../assets/rooms/room-2/room-5.jpg';
-import Third from '../assets/rooms/room-1/room-3.jpg';
-import Five from '../assets/rooms/room-1/room-5.jpg';
 
 function Deluxe() {
     return ( <
         div >
         <
-        div className = ' mt-5 push-left' >
+        div className = ' pt-5 bg-warning push-left' >
         <
-        h1 className = 'push-left' > DELUXE < /h1>  <
-        div className = 'row mt-5' >
-        <
-        div className = 'col-lg-8' > < img src = { First }
-        className = "room-images"
-        alt = "First-room" /
-        >
-        <
-        /
-        div > <
-        div className = 'col-lg-4' > < img src = { Second }
-        className = "room-images"
-        alt = "First-room" /
-        >
-        <
-        /
-        div > < /
+        h2 className = 'push-left mt-lg-5' > DELUXE < /h2>  < /
         div >
         <
-        div className = 'row mt-5' >
-        <
-        div className = 'col-lg-8' > < img src = { Third }
-        className = "room-images"
-        alt = "First-room" /
-        >
-        <
-        /
-        div > <
-        div className = 'col-lg-4' > < img src = { Five }
-        className = "room-images"
-        alt = "First-room" /
-        >
-        <
-        /
-        div > < /
-        div >
-
-        <
-        /
-        div >
-        <
-        div className = 'row pt-3 mt-lg-5 push-left' >
+        div className = 'row bg-warning push-left' >
         <
         div className = 'col-lg-4' > < p className = 'push-left' > < u > DETAILS < /u>  < /
         p >
@@ -146,14 +106,14 @@ function Deluxe() {
         <
         /
         div > <
-        div className = 'col-lg-6 push-right' > < h6 > UG(SHS) / Night < /h6 > < h3 className = 'border px-5 py-2' > 160, 000 < /
-        h3 >
+        div className = 'col-lg-6 push-right' > < h6 > UG(SHS) / Night < /h6 > < h1 className = 'orange-syke px-5 py-2' > 160, 000 < /
+        h1 >
         <
         div className = 'row' >
         <
         div className = 'col-6' >
         <
-        p className = 'border px-lg-5 py-2' > <
+        p className = 'border-0 bg-warning shadow px-lg-5 py-2' > <
         svg xmlns = "http://www.w3.org/2000/svg"
         width = "16"
         height = "16"
@@ -170,8 +130,26 @@ function Deluxe() {
         /div> <
         div className = 'col-6' >
         <
-        p className = 'bg-warning px-lg-5 py-2' > ADD A PAYMENT PLAN < /p > < /div > <
+        p className = 'bg-warning shadow px-lg-5 py-2' > ADD A PAYMENT PLAN < /p > < /div > <
         /div> < /
+        div > < /
+        div >
+        <
+        div className = 'row p-5 bg-dark' >
+        <
+        div className = 'col-lg-8' > < img src = { First }
+        className = "room-images"
+        alt = "First-room" /
+        >
+        <
+        /
+        div > <
+        div className = 'col-lg-4' > < img src = { Second }
+        className = "room-images"
+        alt = "First-room" /
+        >
+        <
+        /
         div > < /
         div >
         <

@@ -8,9 +8,10 @@ body {
     font-family: 'Lora', serif !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("./assets/living.jpg");
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("./assets/bgs.jpg");
     background-size: contain;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
+    background-position-y: -10%;
     /* didnt fit anywhere else */
     color: aliceblue !important;
     text-align: center !important;

@@ -1,30 +1,27 @@
 import Navbars from './Navbar';
 import Button from 'react-bootstrap/Button';
 import './style.css';
-import Form from 'react-bootstrap/Form';
-import Caroussel from './Caroussel';
-import Room from './Rooms';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
 import First from '../assets/rooms/room-2/room.jpg';
 import Second from '../assets/rooms/room-1/room-1.jpg';
-import big from '../assets/bg-22.jpg';
-import BootstrapDatePickerComponent from './DatePickerComponent';
+import big from '../assets/bg-4.jpg';
+import big2 from '../assets/bg-22.jpg';
+import BootstrapDatePicker from './DatePickerComponent';
+import { FormGroup } from 'react-bootstrap';
 
 function Home() {
     return ( < container >
         <
         Navbars / >
         <
-        div className = "row bar-below-nav px-5 py-3 darker" >
+        div className = "row px-5 py-3 bg-warning justify-content-start" >
         <
-        p className = 'px-2' >
+        p className = 'bg-dark rounded-circle px-3 py-2 push-left x-large' > Sy < /p> <
+        p className = ' push-left mt-3' > Guest Account < /p>  <
+        div >
         <
-        Link to = "contact"
-        className = 'link' > Contact us < /Link>  <
-        Link to = "about"
-        className = 'link px-3' > About < /Link> < /p > <
-        Button className = ' bg-warning border-0 px-5 py-1' >
+        Button className = ' bg-warn shadow border-0 px-5 py-2' >
         <
         svg xmlns = "http://www.w3.org/2000/svg"
         width = "16"
@@ -38,96 +35,87 @@ function Home() {
         path d = "M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" / >
         <
         /svg> 
-        BOOK NOW < /Button > < /
+        MAKE A RESERVATION < /Button ><
+        Button className = ' bg-warning shadow border-0 px-lg-5 py-2' > ADD A PAYMENT PLAN < /Button></div > < /
         div >
         <
-        div className = ' row front' >
+        div className = ' row' >
         <
-        div className = 'darker p-5' >
+        div className = 'bg-warning p-5 shadow' >
         <
-        h1 className = ' text-center px-5 mt-5 display-4' > < b > SYKE WORLD < /b><br/ > Hotel < /
-        h1 > < p className = "font-weight-light py-2" > Have a Splendid Time Here! < br / > You can get started by: < br / >
+        div className = 'bg-light py-4 px-5 row' > < p className = 'border rounded-circle py-1' > f < /p> < p className = 'border rounded-circle py-1 mx-3' > t </p > < p className = 'border rounded-circle py-1' > G < /p> <p className='py-1 mx-3 px-5 shadow'>Subscribe to our News Letter</p > <
+        h1 className = ' text-center p-5 mt-5 display-4' > < b > SYKE WORLD < /b><br/ > Hotel < /
+        h1 >
+        <
+        /
+        div > < p className = "font-weight-light" >
         <
         Link to = { "room" } >
         <
-        Button className = 'mt-5 bg-warning border-0 px-5 py-2' > LOOKING AT OUR ROOMS < /Button></Link > <
-        Button className = 'mt-5 bg-transparent border px-5 py-2' > CHECKOUT OUR SERVICES < /Button> < /
+        Button className = 'mt-5 bg-warn shadow border-0 px-5 py-2' > LOOKING AT OUR ROOMS < /Button></Link > < /
         p > < /div></div > <
-        div className = 'row p-5 darker' > <
-        div className = 'row bg-warning ' >
+        div className = 'row p-5 bg-warning shadow' > <
+        div className = 'row bg-warn' >
         <
-        div className = 'col-2 py-5 px-3' >
+        div className = 'col-lg-2 col-sm-12 py-5 px-3' >
         <
-        h3 > CHECK IN < /h3> <
-        BootstrapDatePickerComponent / >
-        <
-        /
-        div > <
-        div className = 'col-2 py-5 px-3' >
-        <
-        h3 > CHECK OUT < /h3>  <
-        BootstrapDatePickerComponent / >
+        h3 > CHECK IN < /h3>  <
+        BootstrapDatePicker / >
         <
         /
         div > <
-        div className = 'col-2 px-3 py-5' >
+        div className = 'col-lg-2 col-sm-12 py-5 px-3' >
         <
-        Form.Group >
+        h3 > CHECK OUT < /h3>   <
+        BootstrapDatePicker / >
         <
-        h3 > ROOMS < /h3> <
-        Form.Select >
+        /
+        div > <
+        div className = 'col-lg-2 col-sm-12 px-3 py-5' >
         <
-        option > SINGLE < /option><
-        option > DOUBLE < /option><
+        h3 > ROOM < /h3>   <
+        FormGroup className = 'px-5 shadow bg-warn py-1' >
+        <
+        select className = 'border-0 bg-warn' >
+        <
+        option > SINGLE < /option> <
+        option > DOUBLE < /option> <
         option > DELUXE < /option> < /
-        Form.Select > <
-        /Form.Group> < /
+        select > < /
+        FormGroup > < /
         div >
         <
-        div className = 'col-2 px-3 py-5' >
+        div className = 'col-lg-2 col-sm-12 px-3 py-5' >
         <
-        Form.Group >
+        h3 > NUMBER OF GUESTS < /h3>  <
+        FormGroup className = 'px-5 shadow bg-warn py-1' >
         <
-        h3 > N0.OF GUESTS < /h3> <
-        Form.Select >
+        select className = 'border-0 bg-warn' >
         <
-        option > 1 < /option><
-        option > 2 < /option><
-        option > 3 < /option><
-        option > 4 < /option> < /
-        Form.Select > <
-        /Form.Group> < /
-        div > <
-        div className = 'col-4 py-5 bg-dark' >
-        <
-        Button className = ' bg-transparent border px-5 py-2' > CHECK AVAILABILITY < /Button> < /
-        div > < /
-        div > < /
-        div > <
-        div className = 'row bg-dark' >
-        <
-        div className = 'col-lg-3 col-sm-8 p-2' >
-        <
-        h3 className = 'roomy p-lg-5' > BAR & RESTAURANT < /h3> <
-        div className = ' p-5' >
-        <
-        Caroussel / >
-
-        <
-        Button className = 'px-5 py-2 bg-warning border-0' > VIEW MORE < /Button>   <
-        p className = 'p-3' > Check
-        for availability of the rooms, book one or more reservations right here and lets get you checked - in faster. < /p> <
-        Button className = 'px-3 py-2 border-light bg-transparent' > CHECK AVAILABILITY < /Button>  < /
-        div >
+        option > 1 < /option> <
+        option > 2 < /option> <
+        option > 3 < /option> < /
+        select > < /
+        FormGroup >
         <
         /
+        div > <
+        div className = 'col-lg-4 col-sm-12 py-5 bg-dark' >
+        <
+        Button className = ' bg-dark back border-0 px-5 py-2'
+        type = 'submit' > CHECK AVAILABILITY < /Button> < /
+        div > < /
+        div > < /
+        div > <
+        div className = 'row bar-below-nav bg-light p-5' >
+        <
+        h2 className = 'display-4 mt-5' > Our Rooms & Services < /h2>   <
+        p className = 'p-2' > Check
+        for availability of the rooms, book one or more reservations < br / > right here and lets get you checked - in faster. < /p><div className='row bar-below-nav' > <
+        Button className = 'px-5 py-2 shadow border-0 bg-warn' > MORE ROOMS < /Button> </div > < /
         div >
         <
-        div className = 'col-lg-9 col-sm-12' >
-        <
-        Room / >
-        <
-        div className = 'row' >
+        div className = 'row bg-warning shadow p-5' >
         <
         div className = 'col-lg-6' > < img src = { First }
         className = "room-images"
@@ -144,35 +132,28 @@ function Home() {
         /
         div > < /
         div >
+
         <
-        /div>  < /
-        div >
+        div className = 'row bg-dark p-5' >
         <
-        div className = 'p-5 bg-dark' >
+        div className = 'col-lg-6' > < img src = { big }
+        className = "room-images"
+        alt = "First-room" /
+        >
         <
-        h1 className = ' pt-3 ' > Explore all our < span className = 'orange-syke' > Services < /span>  < /
-        h1 >
-        <
-        Button className = 'mt-2 mb-2 bg-warning border-0 px-5 py-3' > SEE OUR GALLERY < /Button>  <
-        p > See it all, its Syke World in a whole new light.From the Gardens to the Parking Lot. < br / > Take a look at the Bar, the roof - top and so much more < /p> < /
-        div >
-        <
-        div className = 'row bg-dark' >
-        <
-        div className = 'col-lg-4 col-sm-12 p-lg-5' > <
-        h3 className = 'bar p-lg-5' > BAR & RESTAURANT < /h3> <
-        Button className = 'px-3 py-2 border-0 bg-warning' > THE MENU < /Button> <
-        p className = 'p-3' > LOCAL DISHES | INTERNATIONAL CUISINES < /p>  < /
+        /
         div > <
-        div className = 'col-lg-8 col-sm-12' >
+        div className = 'col-lg-6' > < img src = { big2 }
+        className = "room-images"
+        alt = "First-room" /
+        >
         <
-        img src = { big }
-        alt = "reception"
-        className = "big" / >
+        /
+        div > < /
+        div >
+
         <
-        /div> < /
-        div > <
-        div className = 'row p-5 darker' > <
+        div className = 'row p-5 bg-dark' > <
         div className = 'col p-5' >
         <
         svg xmlns = "http://www.w3.org/2000/svg"
@@ -240,7 +221,7 @@ function Home() {
         7, syke world is your away office. < /p></div >
         <
         /div> <
-        div className = 'row px-5 darker' > <
+        div className = 'row px-5 bg-dark' > <
         div className = 'col p-5' >
         <
         svg xmlns = "http://www.w3.org/2000/svg"

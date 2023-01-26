@@ -1,3 +1,4 @@
+import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './style.css';
@@ -15,7 +16,7 @@ function Navbars() {
         <
         img src = { Logo }
         width = { "200" }
-        height = { "50 " }
+        height = { "40 " }
         alt = "Syke World" /
         >
         <
@@ -28,12 +29,13 @@ function Navbars() {
         Nav.Link href = "room"
         className = 'link' > Rooms < /Nav.Link >  <
         Nav.Link href = "services"
-        className = 'p-lg-3 bar' > Bar & Restaurant < /Nav.Link >  <
+        className = 'bar pt-3' > Bar & Restaurant < /Nav.Link >  <
         Nav.Link className = 'link'
-        href = "about" > About < /Nav.Link> <
-        Nav.Link href = "signup"
-        className = 'text-warning' > < u >
-        LOGIN | SIGN UP < /u> < /Nav.Link > < /Nav > </Navbar.Collapse > < /Navbar >
+        href = "about px-2" > About Syke World < /Nav.Link>  < /Nav > < /Navbar.Collapse > <
+        Nav.Link href = "room"
+        className = 'link rounded-circle border p-2 large' >
+        Sy.. < /Nav.Link > < /
+        Navbar >
     );
 }
 

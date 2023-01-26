@@ -1,19 +1,21 @@
+import React from 'react';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import Room from './Single';
 import Double from './Double';
 import Deluxe from './Deluxe';
 import Navbars from './Navbar';
-import './style.css';
 
 function Rooms() {
     return ( < div >
         <
         Navbars / >
         <
-        div className = 'row bg-warning p-5' > <
+        div className = 'row bg-warning p-5' >
+        <
         h1 className = 'display-4' > Rooms < /h1>  <
-        p className = 'bg-warn border-0 shadow px-5 py-2' > <
+        p className = 'bg-warn border-0 shadow px-5 py-2' >
+        <
         svg xmlns = "http://www.w3.org/2000/svg"
         width = "16"
         height = "16"

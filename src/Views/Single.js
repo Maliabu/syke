@@ -1,8 +1,9 @@
+import React from 'react';
 import './style.css';
-import First from '../assets/rooms/room-1/room.jpg';
+import First from '../assets/rooms/room-1/room-2.jpg';
 import Third from '../assets/rooms/room-1/room-1.jpg';
 import Second from '../assets/rooms/room-1/room-3.jpg';
-import Forth from '../assets/rooms/room-1/room-7.jpg';
+import Forth from '../assets/rooms/room-1/room-6.jpg';
 
 function Room() {
     return ( <

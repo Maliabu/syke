@@ -1,3 +1,4 @@
+import React from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import './index';
@@ -26,8 +27,7 @@ export default function App() {
         />   <
         Route path = "about"
         element = { < About / > }
-        />   <
-        /
+        />   < /
         Routes >
 
     );

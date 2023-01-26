@@ -1,5 +1,8 @@
+import React from 'react';
 import Navbars from './Navbar';
 import bar from '../assets/bar1.jpg';
+import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 
 function Services() {
     return ( <
@@ -100,7 +103,10 @@ function Services() {
         h2 > Open Bar < /h2>  <
         p > Find all your favorite BREAKFAST RUSH dishes, from both local and international menus and have all this without leaving the comfort of your room or your "BED" < /p>   <
         h2 > Restaurant < /h2>  <
-        p > Find all your favorite BREAKFAST RUSH dishes, from both local and international menus and have all this without leaving the comfort of your room or your "BED" < /p>   < /
+        p > Find all your favorite BREAKFAST RUSH dishes, from both local and international menus and have all this without leaving the comfort of your room or your "BED" < /p> <
+        Link to = { "room" } >
+        <
+        Button className = 'mt-5 bg-warn shadow border-0 px-5 py-2' > CHECK OUT THE MENU < /Button></Link > < /
         div > <
         div className = 'col-lg-8 darker col-sm-12 p-5' > <
         img src = { bar }

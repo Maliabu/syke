@@ -1,3 +1,5 @@
+import React from 'react';
+
 import Navbars from './Navbar';
 
 function About() {

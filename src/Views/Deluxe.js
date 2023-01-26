@@ -1,5 +1,6 @@
+import React from 'react';
 import './style.css';
-import First from '../assets/rooms/room-2/room.jpg';
+import First from '../assets/rooms/room-2/room-2.jpg';
 import Second from '../assets/rooms/room-2/room-5.jpg';
 
 function Deluxe() {

@@ -1,12 +1,14 @@
+import React from 'react';
 import Navbars from './Navbar';
 import Button from 'react-bootstrap/Button';
 import './style.css';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
-import First from '../assets/rooms/room-2/room.jpg';
-import Second from '../assets/rooms/room-1/room-1.jpg';
-import big from '../assets/bg-4.jpg';
-import big2 from '../assets/bg-22.jpg';
+import big from '../assets/bar1.jpg';
+import big2 from '../assets/bg-3.jpg';
+import First from '../assets/bg-22.jpg';
+import Second from '../assets/bg-4.jpg';
+import Landing from '../assets/bg-4.jpg';
 import BootstrapDatePicker from './DatePickerComponent';
 import { FormGroup } from 'react-bootstrap';
 
@@ -15,11 +17,7 @@ function Home() {
         <
         Navbars / >
         <
-        div className = "row px-5 py-3 bg-warning justify-content-start" >
-        <
-        p className = 'bg-dark rounded-circle px-3 py-2 push-left x-large' > Sy < /p> <
-        p className = ' push-left mt-3' > Guest Account < /p>  <
-        div >
+        div className = 'p-5 bg-dark' >
         <
         Button className = ' bg-warn shadow border-0 px-5 py-2' >
         <
@@ -36,25 +34,38 @@ function Home() {
         <
         /svg> 
         MAKE A RESERVATION < /Button ><
-        Button className = ' bg-warning shadow border-0 px-lg-5 py-2' > ADD A PAYMENT PLAN < /Button></div > < /
-        div >
-        <
+        Button className = ' bg-dark shadow border-0 px-lg-5 py-2' > ADD A PAYMENT PLAN < /Button></div > <
         div className = ' row' >
         <
-        div className = 'bg-warning p-5 shadow' >
+        div className = 'bg-light p-5' >
         <
-        div className = 'bg-light py-4 px-5 row' > < p className = 'border rounded-circle py-1' > f < /p> < p className = 'border rounded-circle py-1 mx-3' > t </p > < p className = 'border rounded-circle py-1' > G < /p> <p className='py-1 mx-3 px-5 shadow'>Subscribe to our News Letter</p > <
-        h1 className = ' text-center p-5 mt-5 display-4' > < b > SYKE WORLD < /b><br/ > Hotel < /
-        h1 >
+        div className = ' row' > <
+        div className = "row" >
         <
-        /
+        div className = 'col-lg-3 py-5' >
+        <
+        p > Westnile, Uganda - Paidha < /p> < p > Welcomes you to < /p > <
+        h1 className = ' text-center display-4' > < b > SYKE WORLD < /b> Hotel < /
+        h1 > < p > "Your Home away from Home..." < /p> <
+        div className = 'row justify-content-center' > < p className = 'border rounded-circle py-1' > f < /p> < p className = 'border rounded-circle py-1 mx-3' > t </p > < p className = 'border rounded-circle py-1' > G < /p></div >
+        <
+        /div > <
+        div className = 'col-lg-9' >
+        <
+        img src = { Landing }
+        className = "room-images"
+        alt = "First-room" /
+        >
+        <
+        /div> < /
+        div > < /
         div > < p className = "font-weight-light" >
         <
         Link to = { "room" } >
         <
         Button className = 'mt-5 bg-warn shadow border-0 px-5 py-2' > LOOKING AT OUR ROOMS < /Button></Link > < /
         p > < /div></div > <
-        div className = 'row p-5 bg-warning shadow' > <
+        div className = 'row p-5 bg-dark shadow' > <
         div className = 'row bg-warn' >
         <
         div className = 'col-lg-2 col-sm-12 py-5 px-3' >
@@ -112,10 +123,12 @@ function Home() {
         h2 className = 'display-4 mt-5' > Our Rooms & Services < /h2>   <
         p className = 'p-2' > Check
         for availability of the rooms, book one or more reservations < br / > right here and lets get you checked - in faster. < /p><div className='row bar-below-nav' > <
-        Button className = 'px-5 py-2 shadow border-0 bg-warn' > MORE ROOMS < /Button> </div > < /
+        Link to = { "services" } >
+        <
+        Button className = 'mt-5 bg-warn shadow border-0 px-5 py-2' > OUR SERVICES < /Button></Link > < /div > < /
         div >
         <
-        div className = 'row bg-warning shadow p-5' >
+        div className = 'row bg-dark shadow p-5' >
         <
         div className = 'col-lg-6' > < img src = { First }
         className = "room-images"
@@ -134,7 +147,7 @@ function Home() {
         div >
 
         <
-        div className = 'row bg-dark p-5' >
+        div className = 'row bg-warning p-5' >
         <
         div className = 'col-lg-6' > < img src = { big }
         className = "room-images"
